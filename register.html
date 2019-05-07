@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Hotel Details 2 </title>
+		<link href="bootstrap-3.3.7-dist/css/unminified-bootstrap.min.css" rel="stylesheet">
+		<link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,600,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="slider-pro-master/dist/css/slider-pro.min.css"/>
+		<link href="style.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+	
+		<div clas="afixed-nav hidden-xs" id="menu">
+			<nav class="navbar navbar-default first-nav">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"> <img src="Images/logo-v2.png" class="img-responsive"> </a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav menu-list">
+							<li><a href="#">  Home </a></li>
+							<li><a href="#services-link"> <i class="fa fa-plane" aria-hidden="true"></i> Flights </a></li>
+							<li><a href="#features-link"> <i class="fa fa-bed" aria-hidden="true"></i> Hotels </a></li>
+							<li><a href="#features-link"> <i class="fa fa-car" aria-hidden="true"></i> Cars </a></li>
+							<li><a href="#features-link"> <i class="fa fa-bus" aria-hidden="true"></i> Tours </a></li>
+
+						</ul>
+						
+						<ul class="nav navbar-nav navbar-right login">
+							<!-- <li class="dropdown">
+								<a href="#" class="dropdown-toggle log-in-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Login <span class="caret"></span></a>
+								<ul class="dropdown-menu register-wrapper">
+									<div class="register-form">
+										<h3> Login to your account </h3>
+										
+										<div class="log-in-with">
+											<a href="#" class="btn btn-primary btn-block facebook-btn"> <i class="fa fa-facebook" aria-hidden="true"></i> Continue With Facebook </a>
+											<a href="#" class="btn btn-default btn-block google-btn"> <i class="fa fa-google" aria-hidden="true"></i> Continue With Google </a>
+										</div>
+										<div class="loginbox-v4__separator-container">
+											<div class="loginbox-v4__separator"></div>
+											<div class="loginbox-v4__separator-text">OR</div>
+											<div class="loginbox-v4__separator"></div>
+										</div>
+										<form>
+											<div class="form-group">
+												<label for="exampleInputEmail1">Email address</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+											</div>
+											<div class="form-group">
+												<label for="Password">  Password</label>
+												<input type="password" class="form-control" id="Password" placeholder="">
+											</div>
+								
+											<div class="login-confirmed">
+												<a href="#" class="btn btn-default btn-danger btn-block"> Log In</a>
+												<p> or <a href="#"> Forgot Password</a></p>
+											</div>
+											
+											<div class="login-text">
+												By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+											</div>
+											
+											<div class="login-seperator"> </div>
+											<div class="login-footer">
+												Don't have an account?
+												<a class="sign-link" href="#">
+													Sign up
+												</a>
+											</div>
+										</form>
+									</div>
+									
+								</ul>
+							</li> -->
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle sign-up-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Log in <span class="caret"></span></a>
+								<ul class="dropdown-menu register-wrapper">
+									<div class="register-form">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Log in </h3>
+												<form>
+													<div class="form-group">
+														<!-- <label for="exampleInputEmail1">Email address</label> -->
+														<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+													</div>
+													<div class="form-group">
+														<!-- <label for="Password">  Password</label> -->
+														<input type="password" class="form-control" id="Password" placeholder="Password">
+													</div>
+										
+													<div class="login-confirmed">
+														<a href="#" class="btn btn-default btn-primary btn-block"> Log In</a>
+														<p> or <a href="#"> Forgot Password</a></p>
+													</div>
+													
+													<!-- <div class="login-text">
+														By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+													</div> -->
+													
+													<div class="loginbox-v4__separator-container">
+														<div class="loginbox-v4__separator"></div>
+														<div class="loginbox-v4__separator-text">OR</div>
+														<div class="loginbox-v4__separator"></div>
+													</div>
+
+													<!-- <div class="login-seperator"> </div> -->
+													<!-- <div class="login-footer">
+														Don't have an account?
+														<a class="sign-link" href="#">
+															Sign up
+														</a>
+													</div> -->
+												</form>
+												<div class="row">
+													<div class="col-sm-12">
+														<div class="log-in-with">
+															<a href="#" class="btn btn-primary facebook-btn"> <i class="fa fa-facebook" aria-hidden="true"></i> Facebook </a>
+															<a href="#" class="btn btn-default google-btn"> <i class="fa fa-google" aria-hidden="true"></i> Google </a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<h3> Sign up now </h3>
+												<form>
+													<div class="form-group">
+														
+														<input type="text" class="form-control" id="username" placeholder="Your Username">
+													</div>
+													<div class="form-group">
+														
+														<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+													</div>
+													<div class="form-group">
+														
+														<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+													</div>
+
+													<div class="form-group">
+													
+														<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
+													</div>
+
+
+													<div class="checkbox">
+														<label>
+															<input type="checkbox"> 
+															Check here for exciting deals and personalized course recommendations
+
+														</label>
+													</div>
+													
+													<div class="login-confirmed">
+														<a href="#" class="btn btn-default btn-primary btn-block"> Sign up</a>
+													</div>
+
+													<div class="login-text">
+														By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+													</div>
+												</form>
+											</div>
+											
+										</div>
+									</div>
+
+								</ul>
+							</li>
+
+						</ul>
+
+						
+						
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		
+		<div class="cover-register">
+			<div class="overlay"> </div>
+
+			<h2> Register Now </h2>
+			<div class="register-form-singlePage">
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Log in </h3>
+						<form>
+							<div class="form-group">
+								<!-- <label for="exampleInputEmail1">Email address</label> -->
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+							</div>
+							<div class="form-group">
+								<!-- <label for="Password">  Password</label> -->
+								<input type="password" class="form-control" id="Password" placeholder="Password">
+							</div>
+				
+							<div class="login-confirmed">
+								<a href="#" class="btn btn-default btn-primary btn-block"> Log In</a>
+								<p> or <a href="#"> Forgot Password</a></p>
+							</div>
+							
+							<!-- <div class="login-text">
+								By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+							</div> -->
+							
+							<div class="loginbox-v4__separator-container">
+								<div class="loginbox-v4__separator"></div>
+								<div class="loginbox-v4__separator-text">OR</div>
+								<div class="loginbox-v4__separator"></div>
+							</div>
+
+							<!-- <div class="login-seperator"> </div> -->
+							<!-- <div class="login-footer">
+								Don't have an account?
+								<a class="sign-link" href="#">
+									Sign up
+								</a>
+							</div> -->
+						</form>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="log-in-with">
+									<a href="#" class="btn btn-primary facebook-btn"> <i class="fa fa-facebook" aria-hidden="true"></i> Facebook </a>
+									<a href="#" class="btn btn-default google-btn"> <i class="fa fa-google" aria-hidden="true"></i> Google </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<h3> Sign up now </h3>
+						<form>
+							<div class="form-group">
+								
+								<input type="text" class="form-control" id="username" placeholder="Your Username">
+							</div>
+							<div class="form-group">
+								
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+							</div>
+							<div class="form-group">
+								
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+
+							<div class="form-group">
+							
+								<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
+							</div>
+
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> 
+									Check here for exciting deals and personalized course recommendations
+
+								</label>
+							</div>
+							
+							<div class="login-confirmed">
+								<a href="#" class="btn btn-default btn-primary btn-block"> Sign up</a>
+							</div>
+
+							<div class="login-text">
+								By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h4> jatayo.com </h4>
+						<p> Lorem ipsum dolor sit amet consadi Nam at tempus nunc. Integer bib psum dolor sit amet consadipis Nam at tempus nunc.</p>
+						<ul class="list-unstyled">
+							<li> <a href="#"> Contact </a></li>
+							<li> <a href="#"> Faq </a></li>
+							<li> <a href="#"> About </a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4> Tours </h4>
+						<ul class="list-unstyled">
+							<li> <a href="#"> Hotels </a></li>
+							<li> <a href="#"> Cars </a></li>
+							<li> <a href="#"> Flights </a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4> Follow Us </h4>
+						<ul class="list-unstyled list-inline">
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-facebook-f"> </i></span> </a></li>
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-twitter"> </i></span> </a></li>
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-google-plus-official"> </i></span> </a></li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+<!-- modal for more details -->
+<div class="modal fade" id="moreDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> <strong> Hotel Annapurna </strong> </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+					<div class="col-md-12 more-details">
+						<div class="modal-list-wrapper">
+									<div class="row">
+										<div class="col-md-4 col-xs-12">
+											<div class="right-image">
+												<a href="#">
+													<img src="images/hotel_1.jpg" alt="room book detail" class="img-responsive">
+												</a>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="clearfix">
+												<div class="room-type">
+													<h3 class="h4"> Deluxe Room - Double </h3>
+													<span class="label label-success"> Available </span>
+												</div>
+
+												<div class="room-services">
+													<div class="room-description">
+														<ul class="list-unstyled">
+															<i class="fa fa-male"> </i>
+															<span> <b>Capacity : </b> </span>
+															<li>  <span class="capacity"> Adults x4 </span></li>
+															<li> <span class="capacity"> / Child x5 </span></li>
+														</ul>
+														<ul class="list-unstyled">
+															<i class="fa fa-calendar" aria-hidden="true"></i>
+															<span> <b>Availability : </b> </span>
+															<li> <span class="capacity"> Jan 20, 2018 </span></li>
+													
+														</ul>
+															<ul class="list-unstyled">
+															<i class="fa fa-map-marker" aria-hidden="true"></i>
+															<span> <b> Location : </b> </span>
+															<li> <span class="capacity"> Boudha, Kathandu </span></li>
+													
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+										<div class="col-md-2 p0">
+											<div class="price_list">
+												<div class="book-btn">
+													<span class="big-price">Rs.10000</span>
+													<small>Per night</small>
+														<span class="rating">
+															<a href="#"><i class="fa fa-star"></i></a>
+															<a href="#"><i class="fa fa-star"></i></a>
+															<a href="#"><i class="fa fa-star"></i></a>
+															<a href="#"><i class="fa fa-star"></i></a>
+															<a href="#"><i class="fa fa-star"></i></a>
+														</span>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+						</div> <!-- list wrapper -->
+						<p>
+							Located just 500 m away from the Palace Museum and adjacent to the famous Garden of Dreams, Hotel Nana offers free Wi-Fi throughout the property and two restaurants.
+						</p>
+						<h4 class="facilities-title"><strong> Hotel facilities </strong></h4>
+						<div class="row">
+							<div class="col-md-4 col-sm-6">
+								<ul class="list_ok list-unstyled">
+									<li> Private Bathroom </li>
+									<li> Shampoo </li>
+									<li> Toilet Paper </li>
+									<li> Slipper </li>
+									<li> Hot Water </li>
+									<li> Bathtub </li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<ul class="list_ok list-unstyled">
+									<li> Private Balcony </li>
+									<li>Seating Area</li>
+									<li> Bottle of water </li>
+									<li> Breakfast in the room </li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<ul class="list_ok list-unstyled">
+									<li> Private Balcony </li>
+									<li>Seating Area</li>
+									<li> Bottle of water </li>
+									<li> Breakfast in the room </li>
+								</ul>
+							</div>
+						</div>
+						<h4 class="facilities-title"><strong>Extra facilities</strong></h4>
+						<div class="row">
+							<div class="col-md-4 col-sm-12">
+								<ul class="list_ok list-unstyled">
+									<li>Fan</li>
+									<li> Room service </li>
+									<li> ATM/cash machine on site </li>
+									<li> Currency exchange </li>
+									<li> 24-hour front desk </li>
+									<li> Taxi Service </li>
+								</ul>
+							</div>
+						</div>
+						<!-- End row  -->
+					</div>
+				</div> 	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal for more details -->
+<div class="modal fade" id="bookingForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> <strong> Place Your Order </strong> </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+					<div class="col-md-12">
+						<div class="modal-list-wrapper">
+									<div class="row">
+										<div class="col-md-4 col-xs-12">
+											<div class="right-image">
+												<a href="#">
+													<img src="images/hotel_1.jpg" alt="room book detail" class="img-responsive">
+												</a>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="clearfix">
+												<div class="room-type">
+													<h3 class="h4"> Deluxe Room - Double </h3>
+													<span class="label label-success"> Available </span>
+												</div>
+
+												<div class="room-services">
+													<div class="room-description">
+														<ul class="list-unstyled">
+															<i class="fa fa-male"> </i>
+															<span> <b>Capacity : </b> </span>
+															<li>  <span class="capacity"> Adults x4 </span></li>
+															<li> <span class="capacity"> / Child x5 </span></li>
+														</ul>
+														<ul class="list-unstyled">
+															<i class="fa fa-calendar" aria-hidden="true"></i>
+															<span> <b>Availability : </b> </span>
+															<li> <span class="capacity"> Jan 20, 2018 </span></li>
+													
+														</ul>
+															<ul class="list-unstyled">
+															<i class="fa fa-map-marker" aria-hidden="true"></i>
+															<span> <b> Location : </b> </span>
+															<li> <span class="capacity"> Boudha, Kathandu </span></li>
+													
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+						</div> <!-- list wrapper -->
+						<div class="booking-form">
+							<div class="form-title">
+								<h3> Your Information </h3>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="firstname"> First Name  </label>
+											<input type="text" class="form-control" id="firstname" placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="lastname"> Last Name  </label>
+											<input type="text" class="form-control" id="lastname" placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="email"> Email </label>
+											<input type="text" class="form-control" id="email" placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="comail">  Confirm Email </label>
+											<input type="text" class="form-control" id="comail" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="telephone">  Telephone </label>
+											<input type="text" class="form-control" id="telephone" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="country"> Country </label>
+											<input type="text" class="form-control" id="country" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="arrivaldate"> Arrival Date </label>
+											<input type="text" class="form-control" id="arrivaldate" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="departuredate"> Departure Date</label>
+											<input type="text" class="form-control" id="departuredate" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-2 col-xs-6">
+										<label for="departuredate"> Adult </label>
+										<select class="form-control">
+										  <option>1</option>
+										  <option>2</option>
+										  <option>3</option>
+										  <option>4</option>
+										  <option>5</option>
+										</select>
+									</div>	
+
+									<div class="col-sm-2 col-xs-6">
+										<label for="departuredate"> Child </label>
+										<select class="form-control">
+										  <option>1</option>
+										  <option>2</option>
+										  <option>3</option>
+										  <option>4</option>
+										  <option>5</option>
+										</select>
+									</div>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-2 mt10">
+										<div class="search-btn">
+											<a href="#" class="btn btn-danger"> Book Now </a>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div> 	
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+		<!-- Bootstrap core JavaScript
+================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="sticky/jquery.sticky.js"> </script>
+		<script src="slider-pro-master/dist/js/jquery.sliderPro.min.js"></script>
+		<script type="text/javascript">
+			jQuery( document ).ready(function( $ ) {
+				$( '#my-slider' ).sliderPro({
+					width: 960,
+					height: 500,
+					arrows: true,
+					buttons: false,
+					waitForLayers: true,
+					fade: true,
+					autoplay: false,
+					autoScaleLayers: false
+				});
+
+				$(".sticker").sticky({topSpacing:0});
+				$(".sticker-form").sticky({topSpacing:95});
+			});
+		</script>
+
+	</body>
+</html>

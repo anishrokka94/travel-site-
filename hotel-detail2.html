@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Hotel Details 2 </title>
+		<link href="bootstrap-3.3.7-dist/css/unminified-bootstrap.min.css" rel="stylesheet">
+		<link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,600,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="slider-pro-master/dist/css/slider-pro.min.css"/>
+		<link href="style.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+	
+		<div clas="afixed-nav hidden-xs" id="menu">
+			<nav class="navbar navbar-default first-nav">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"> <img src="Images/logo-v2.png" class="img-responsive"> </a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav menu-list">
+							<li><a href="#">  Home </a></li>
+							<li><a href="#services-link"> <i class="fa fa-plane" aria-hidden="true"></i> Flights </a></li>
+							<li class="active"><a href="#features-link"> <i class="fa fa-bed" aria-hidden="true"></i> Hotels </a></li>
+							<li><a href="#features-link"> <i class="fa fa-car" aria-hidden="true"></i> Cars </a></li>
+							<li><a href="#features-link"> <i class="fa fa-bus" aria-hidden="true"></i> Tours </a></li>
+
+						</ul>
+						
+						<ul class="nav navbar-nav navbar-right login">
+							<!-- <li class="dropdown">
+								<a href="#" class="dropdown-toggle log-in-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Login <span class="caret"></span></a>
+								<ul class="dropdown-menu register-wrapper">
+									<div class="register-form">
+										<h3> Login to your account </h3>
+										
+										<div class="log-in-with">
+											<a href="#" class="btn btn-primary btn-block facebook-btn"> <i class="fa fa-facebook" aria-hidden="true"></i> Continue With Facebook </a>
+											<a href="#" class="btn btn-default btn-block google-btn"> <i class="fa fa-google" aria-hidden="true"></i> Continue With Google </a>
+										</div>
+										<div class="loginbox-v4__separator-container">
+											<div class="loginbox-v4__separator"></div>
+											<div class="loginbox-v4__separator-text">OR</div>
+											<div class="loginbox-v4__separator"></div>
+										</div>
+										<form>
+											<div class="form-group">
+												<label for="exampleInputEmail1">Email address</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+											</div>
+											<div class="form-group">
+												<label for="Password">  Password</label>
+												<input type="password" class="form-control" id="Password" placeholder="">
+											</div>
+								
+											<div class="login-confirmed">
+												<a href="#" class="btn btn-default btn-danger btn-block"> Log In</a>
+												<p> or <a href="#"> Forgot Password</a></p>
+											</div>
+											
+											<div class="login-text">
+												By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+											</div>
+											
+											<div class="login-seperator"> </div>
+											<div class="login-footer">
+												Don't have an account?
+												<a class="sign-link" href="#">
+													Sign up
+												</a>
+											</div>
+										</form>
+									</div>
+									
+								</ul>
+							</li> -->
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle sign-up-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Log in <span class="caret"></span></a>
+								<ul class="dropdown-menu register-wrapper">
+									<div class="register-form">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Log in </h3>
+												<form>
+													<div class="form-group">
+														<!-- <label for="exampleInputEmail1">Email address</label> -->
+														<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+													</div>
+													<div class="form-group">
+														<!-- <label for="Password">  Password</label> -->
+														<input type="password" class="form-control" id="Password" placeholder="Password">
+													</div>
+										
+													<div class="login-confirmed">
+														<a href="#" class="btn btn-default btn-primary btn-block"> Log In</a>
+														<p> or <a href="#"> Forgot Password</a></p>
+													</div>
+													
+													<!-- <div class="login-text">
+														By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+													</div> -->
+													
+													<div class="loginbox-v4__separator-container">
+														<div class="loginbox-v4__separator"></div>
+														<div class="loginbox-v4__separator-text">OR</div>
+														<div class="loginbox-v4__separator"></div>
+													</div>
+
+													<!-- <div class="login-seperator"> </div> -->
+													<!-- <div class="login-footer">
+														Don't have an account?
+														<a class="sign-link" href="#">
+															Sign up
+														</a>
+													</div> -->
+												</form>
+												<div class="row">
+													<div class="col-sm-12">
+														<div class="log-in-with">
+															<a href="#" class="btn btn-primary facebook-btn"> <i class="fa fa-facebook" aria-hidden="true"></i> Facebook </a>
+															<a href="#" class="btn btn-default google-btn"> <i class="fa fa-google" aria-hidden="true"></i> Google </a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<h3> Sign up now </h3>
+												<form>
+													<div class="form-group">
+														
+														<input type="text" class="form-control" id="username" placeholder="Your Username">
+													</div>
+													<div class="form-group">
+														
+														<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+													</div>
+													<div class="form-group">
+														
+														<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+													</div>
+
+													<div class="form-group">
+													
+														<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
+													</div>
+
+
+													<div class="checkbox">
+														<label>
+															<input type="checkbox"> 
+															Check here for exciting deals and personalized course recommendations
+
+														</label>
+													</div>
+													
+													<div class="login-confirmed">
+														<a href="#" class="btn btn-default btn-primary btn-block"> Sign up</a>
+													</div>
+
+													<div class="login-text">
+														By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+													</div>
+												</form>
+											</div>
+											
+										</div>
+									</div>
+
+								</ul>
+							</li>
+
+						</ul>
+
+						
+						
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		
+		<div class="breadcrumbs2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+							<li class="breadcrumb-item active"> Hotel Details </li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fixed-menu sticker">
+			<div class="container">
+				<div class="hotel-name">
+					<h1> Traditional Rooms in a Resort in Candolim </h1>
+					<h4>Kathmandu, Nepal </h4>
+				</div>
+				<div class="row no-flex">
+					<ul class="submenu list-unstyled">
+						<li class="submenu__list active"> 
+							<a href="#overview"> Overview </a>
+						</li>
+						<li class="submenu__list"> 
+							<a href="#description"> Description </a>
+						</li>
+						<li class="submenu__list"> 
+							<a href="#amenities"> Amenities </a>
+						</li>
+						<li class="submenu__list"> 
+							<a href="#rooms"> Rooms </a>
+						</li>
+						<li class="submenu__list"> 
+							<a href="#policies"> Policies </a>
+						</li>
+						<li class="submenu__list"> 
+							<a href="#address"> Address </a>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+		<div class="product-details">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="detail-seperate" id="overview">
+							<div class="slider-pro" id="my-slider">
+								<div class="sp-slides">
+									<!-- Slide 1 -->
+									<div class="sp-slide">
+										<img class="sp-image" src="images/slide1.png"/>
+										<img class="sp-thumbnail" src="images/slide1.png"/>
+									</div>
+
+									<div class="sp-slide">
+										<img class="sp-image" src="images/slide2.png"/>
+										<img class="sp-thumbnail" src="images/slide2.png"/>
+									</div>
+
+									<div class="sp-slide">
+										<img class="sp-image" src="images/slide3.jpg"/>
+										<img class="sp-thumbnail" src="images/slide3.jpg"/>
+									</div>
+
+									<div class="sp-slide">
+										<img class="sp-image" src="images/slide1.png"/>
+										<img class="sp-thumbnail" src="images/slide1.png"/>
+									</div>
+
+									<div class="sp-slide">
+										<img class="sp-image" src="images/slide2.png"/>
+										<img class="sp-thumbnail" src="images/slide2.png"/>
+									</div>
+
+									<div class="sp-slide">
+										<img class="sp-image" src="images/slide3.jpg"/>
+										<img class="sp-thumbnail" src="images/slide3.jpg"/>
+									</div>
+
+									<div class="sp-slide">
+										<img class="sp-image" src="images/slide4.jpg"/>
+										<img class="sp-thumbnail" src="images/slide4.jpg"/>
+									</div>
+
+									<div class="sp-slide">
+										<img class="sp-image" src="images/slide5.jpg"/>
+										<img class="sp-thumbnail" src="images/slide5.jpg"/>
+									</div>
+
+								</div> <!-- sp slides -->
+							</div>
+						</div>
+						
+						<div class="detail-seperate" id="description">
+							<h3 class="service-title"> Decription </h3>
+							<p class="attribute">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit apnim id est laborum.
+							</p>
+						</div>
+
+						<div class="detail-seperate" id="amenities">
+							<h3 class="service-title"> Amenities </h3>
+							<div class="row">
+								<div class="col-sm-4">
+									<ul class="list-unstyled">
+										<li class="attribute"> 
+
+											<i class="fa fa-bath" aria-hidden="true"></i>
+											<span class=""> Bath </span>
+										</li>
+										
+										<li class="attribute">
+											<i class="fa fa-thermometer-full" aria-hidden="true"></i>
+											<span class=""> A/C Room </span>
+										</li>
+										
+										<li class="attribute">
+											<i class="fa fa-wifi" aria-hidden="true"></i>
+											<span class=""> Wifi </span>
+										</li>
+										
+										<li class="attribute">
+											<i class="fa fa-car" aria-hidden="true"></i>
+											<span class=""> Car Parking </span>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col-sm-4">
+									<ul class="list-unstyled">
+										<li class="attribute"> 
+
+											<i class="fa fa-coffee" aria-hidden="true"></i>
+											<span class=""> Breakfast </span>
+										</li>
+
+										<li class="attribute">
+											<i class="fa fa-bolt" aria-hidden="true"></i>
+											<span class=""> 24*7 Power back-up </span>
+										</li>
+
+										<li class="attribute">
+											<i class="fa fa-check" aria-hidden="true"></i>
+											<span class=""> Pets Allowed </span>
+										</li>
+
+										<li class="attribute">
+											<i class="fa fa-glass" aria-hidden="true"></i>
+											<span class=""> Night Club </span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="detail-seperate" id="rooms">
+							<h3 class="service-title"> Select Room </h3>
+								<div class="list-wrapper">
+									<div class="row">
+										<div class="col-md-4 col-xs-12">
+											<div class="right-image">
+												<a href="#">
+													<img src="images/hotel_1.jpg" alt="room book detail" class="img-responsive">
+												</a>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="middle-content clearfix">
+												<div class="room-type">
+													<h3> Deluxe Room - Double </h3>
+													<span class="label label-success"> Available </span>
+												</div>
+
+												<div class="room-services">
+													<div class="room-description">
+														<ul class="list-unstyled">
+															<span> <b>Capacity : </b> </span>
+															<li> <i class="fa fa-male"> </i> <span class="capacity"> Adults x4 </span></li>
+															<li> <i class="fa fa-child" aria-hidden="true"></i> <span class="capacity"> Child x5 </span></li>
+														</ul>
+														<div class="more-buttons">
+															<a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#moreDetails"> more details </a>
+															<a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#avaibility"> check avaibility </a>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+										<div class="col-md-2">
+											<div class="price_list">
+												<div class="book-btn">
+													<span class="big-price">Rs.10000</span>
+													<small>Per night</small>
+													<a href="#" class="btn btn-md btn-primary" data-toggle="modal" data-target="#bookingForm"> Book </a>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div> <!-- list wrapper -->	
+
+								<div class="list-wrapper">
+									<div class="row">
+										<div class="col-md-4 col-xs-12">
+											<div class="ribbon">
+												<span class="red-ribbon"> Popular </span>
+											</div>
+											<div class="right-image">
+												<a href="#">
+													<img src="images/hotel_1.jpg" alt="room book detail" class="img-responsive">
+												</a>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="middle-content clearfix">
+												<div class="room-type">
+													<h3> Deluxe Room - Triple </h3>
+													<span class="label label-success"> Available </span>
+												</div>
+
+												<div class="room-services">
+													<div class="room-description">
+														<ul class="list-unstyled">
+															<span> <b>Capacity : </b> </span>
+															<li> <i class="fa fa-male"> </i> <span class="capacity"> Adults x6 </span></li>
+															<li> <i class="fa fa-child" aria-hidden="true"></i> <span class="capacity"> Child x5 </span></li>
+														</ul>
+														<div class="more-buttons">
+															<a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#moreDetails"> more details </a>
+															<a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#avaibility"> check avaibility </a>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+										<div class="col-md-2">
+											<div class="price_list">
+												<div class="book-btn">
+													<span class="big-price">Rs.13000</span>
+													<small>Per night</small>
+													<a href="#" class="btn btn-md btn-primary" data-toggle="modal" data-target="#bookingForm"> Book </a>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div> <!-- list wrapper -->		
+						</div>
+						
+						<div class="detail-seperate" id="policies">
+							<h3 class="service-title"> Policies </h3>
+							<div class="policies">
+								<span class="policies-title"> Check-In Time </span>
+								<span class="policies-answer"> Standard Check-In Time is 12:00 PM</span>
+							</div>
+							
+							<div class="policies">
+								<span class="policies-title"> Check-Out Time </span>
+								<span class="policies-answer"> Standard Check-Out Time is 11:00 AM</span>
+							</div>
+							
+							<div class="policies">
+								<span class="policies-title"> Early Check-In Policy </span>
+								<span class="policies-answer"> Early check-in between 10 am to 12 pm is possible (free of charge) but can be confirmed, subject to availability, only upon arrival at the hotel and not in advance. For check-in prior to 10 AM, an extra night's tariff shall be applicable.</span>
+							</div>
+							
+							<div class="policies">
+								<span class="policies-title"> Late Check-Out Policy </span>
+								<span class="policies-answer"> Late check-out between 12 pm and 1 pm is possible (free of charge) but can be confirmed, subject to availability, only at the time of check-out and not in advance. For check-out after 1 PM, an extra night's tariff shall be applicable </span>
+							</div>
+							
+							<div class="policies">
+								<span class="policies-title"> Child Reservation Policy </span>
+								<span class="policies-answer"> A maximum of 1 child upto an age of 8 years and an extra infant upto an age of 2 years is allowed free of charge, subject to room occupancy capacity. Breakfast will be included in stay but no extra bed or mattress will be provided. Extra person charges are applicable for anyone above 8 years of age. Extra person charges are also applicable for extra kids during check-in.</span>
+							</div>
+						</div>
+						
+						<div class="detail-seperate" id="address">
+							<h3 class="service-title"> Address </h3>
+							
+							<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.9373300471757!2d85.35188761465653!3d27.719221182786917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1962bbc7f459%3A0x90e090b55da53870!2sHayat+Regency!5e0!3m2!1sen!2snp!4v1513497805009" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						
+					</div>
+
+					<div class="col-md-4">
+						<div class="search-form mt0 sticker-form">
+							<div class="search-form-header">
+								<h4 class="form-header-title"> Check Availability </h4>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="fly_2"> Location </label>
+											<input type="text" class="form-control" id="fly_2" placeholder="Search Location">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="fly_1"> Check In </label>
+											<input type="text" class="form-control datetimepicker" id="fly_1" placeholder="From">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="fly_2"> Check Out </label>
+											<input type="text" class="form-control datetimepicker" id="fly_2" placeholder="TO">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+											<div class="form-group">
+												<label for=""> Adult </label>
+												<select class="form-control">
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+												<i class="fa fa-chevron-down"></i>
+											</div>
+									</div>
+
+									<div class="col-sm-6">
+											<div class="form-group">
+												<label for=""> Child </label>
+												<select class="form-control">
+													<option>0</option>
+												  <option>1</option>
+												  <option>2</option>
+												  <option>3</option>
+												  <option>4</option>
+												  <option>5</option>
+												</select>
+												<i class="fa fa-chevron-down"></i>
+											</div>
+									</div>
+
+									<div class="col-md-2">
+										<div class="search-btn">
+											<a href="#" class="btn btn-danger btn-find"> Find Hotels </a>
+										</div>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div class="tour-packages">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="service-title heading-underline-left"> Featured Hotels </h3>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="same-card">
+							<div class="booking-card-header">
+								<img src="images/room1.png" class="img-responsive" alt="available room">
+								
+								<div class="overlay">
+									<ul class="list-inline text-center">
+										<li class="list-inline-item">
+											<a href="#" class="btn btn-danger btn-sm"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Book Now </a>
+										</li>
+										<li class="list-inline-item">
+											<a href="#" class="btn btn-primary btn-sm"> <i class="fa fa-heart"></i> View Details </a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="booking-card-body p7">
+								<h4> <b>  Standard Room  </b> </h4>
+								<p>
+									<span class="rating">
+										<a href="#"><i class="fa fa-star"></i></a>
+										<a href="#"><i class="fa fa-star"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+									</span>
+								</p>
+								<p class="text-left big-price">
+									Rs.1500/ nights
+								</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="same-card">
+							<div class="booking-card-header">
+								<img src="images/room2.png" class="img-responsive" alt="available room">
+								
+								<div class="overlay">
+									<ul class="list-inline text-center">
+										<li class="list-inline-item">
+											<a href="#" class="btn btn-danger btn-sm"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Book Now </a>
+										</li>
+										<li class="list-inline-item">
+											<a href="#" class="btn btn-primary btn-sm"> <i class="fa fa-heart"></i> View Details </a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="booking-card-body p7">
+								<h4> <b>  Standard Room  </b> </h4>
+								<p>
+									<span class="rating">
+										<a href="#"><i class="fa fa-star"></i></a>
+										<a href="#"><i class="fa fa-star"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+									</span>
+								</p>
+								<p class="text-left big-price">
+									Rs.1500/ nights
+								</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="same-card">
+							<div class="booking-card-header">
+								<img src="images/room4.png" class="img-responsive" alt="available room">
+								
+								<div class="overlay">
+									<ul class="list-inline text-center">
+										<li class="list-inline-item">
+											<a href="#" class="btn btn-danger btn-sm"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Book Now </a>
+										</li>
+										<li class="list-inline-item">
+											<a href="#" class="btn btn-primary btn-sm"> <i class="fa fa-heart"></i> View Details </a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="booking-card-body p7">
+								<h4> <b>  Deluxe Room  </b> </h4>
+								<p>
+									<span class="rating">
+										<a href="#"><i class="fa fa-star"></i></a>
+										<a href="#"><i class="fa fa-star"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+									</span>
+								</p>
+								<p class="text-left big-price">
+									Rs.1500/ nights
+								</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="same-card">
+							<div class="booking-card-header">
+								<img src="images/room1.png" class="img-responsive" alt="available room">
+								
+								<div class="overlay">
+									<ul class="list-inline text-center">
+										<li class="list-inline-item">
+											<a href="#" class="btn btn-danger btn-sm"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Book Now </a>
+										</li>
+										<li class="list-inline-item">
+											<a href="#" class="btn btn-primary btn-sm"> <i class="fa fa-heart"></i> View Details </a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="booking-card-body p7">
+								<h4> <b>  Standard Room  </b> </h4>
+								<p>
+									<span class="rating">
+										<a href="#"><i class="fa fa-star"></i></a>
+										<a href="#"><i class="fa fa-star"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+										<a href="#"><i class="fa fa-star-o"></i></a>
+									</span>
+								</p>
+								<p class="text-left big-price">
+									Rs.1500/ nights
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="footer-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h4> jatayo.com </h4>
+						<p> Lorem ipsum dolor sit amet consadi Nam at tempus nunc. Integer bib psum dolor sit amet consadipis Nam at tempus nunc.</p>
+						<ul class="list-unstyled">
+							<li> <a href="#"> Contact </a></li>
+							<li> <a href="#"> Faq </a></li>
+							<li> <a href="#"> About </a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4> Tours </h4>
+						<ul class="list-unstyled">
+							<li> <a href="#"> Hotels </a></li>
+							<li> <a href="#"> Cars </a></li>
+							<li> <a href="#"> Flights </a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4> Follow Us </h4>
+						<ul class="list-unstyled list-inline">
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-facebook-f"> </i></span> </a></li>
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-twitter"> </i></span> </a></li>
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-google-plus-official"> </i></span> </a></li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+<!-- modal for more details -->
+<div class="modal fade" id="moreDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> <strong> Hotel Annapurna </strong> </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+					<div class="col-md-12 more-details">
+						<div class="modal-list-wrapper">
+									<div class="row">
+										<div class="col-md-4 col-xs-12">
+											<div class="right-image">
+												<a href="#">
+													<img src="images/hotel_1.jpg" alt="room book detail" class="img-responsive">
+												</a>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="clearfix">
+												<div class="room-type">
+													<h3 class="h4"> Deluxe Room - Double </h3>
+													<span class="label label-success"> Available </span>
+												</div>
+
+												<div class="room-services">
+													<div class="room-description">
+														<ul class="list-unstyled">
+															<i class="fa fa-male"> </i>
+															<span> <b>Capacity : </b> </span>
+															<li>  <span class="capacity"> Adults x4 </span></li>
+															<li> <span class="capacity"> / Child x5 </span></li>
+														</ul>
+														<ul class="list-unstyled">
+															<i class="fa fa-calendar" aria-hidden="true"></i>
+															<span> <b>Availability : </b> </span>
+															<li> <span class="capacity"> Jan 20, 2018 </span></li>
+													
+														</ul>
+															<ul class="list-unstyled">
+															<i class="fa fa-map-marker" aria-hidden="true"></i>
+															<span> <b> Location : </b> </span>
+															<li> <span class="capacity"> Boudha, Kathandu </span></li>
+													
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+										<div class="col-md-2 p0">
+											<div class="price_list">
+												<div class="book-btn">
+													<span class="big-price">Rs.10000</span>
+													<small>Per night</small>
+														<span class="rating">
+															<a href="#"><i class="fa fa-star"></i></a>
+															<a href="#"><i class="fa fa-star"></i></a>
+															<a href="#"><i class="fa fa-star"></i></a>
+															<a href="#"><i class="fa fa-star"></i></a>
+															<a href="#"><i class="fa fa-star"></i></a>
+														</span>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+						</div> <!-- list wrapper -->
+						<p>
+							Located just 500 m away from the Palace Museum and adjacent to the famous Garden of Dreams, Hotel Nana offers free Wi-Fi throughout the property and two restaurants.
+						</p>
+						<h4 class="facilities-title"><strong> Hotel facilities </strong></h4>
+						<div class="row">
+							<div class="col-md-4 col-sm-6">
+								<ul class="list_ok list-unstyled">
+									<li> Private Bathroom </li>
+									<li> Shampoo </li>
+									<li> Toilet Paper </li>
+									<li> Slipper </li>
+									<li> Hot Water </li>
+									<li> Bathtub </li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<ul class="list_ok list-unstyled">
+									<li> Private Balcony </li>
+									<li>Seating Area</li>
+									<li> Bottle of water </li>
+									<li> Breakfast in the room </li>
+								</ul>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<ul class="list_ok list-unstyled">
+									<li> Private Balcony </li>
+									<li>Seating Area</li>
+									<li> Bottle of water </li>
+									<li> Breakfast in the room </li>
+								</ul>
+							</div>
+						</div>
+						<h4 class="facilities-title"><strong>Extra facilities</strong></h4>
+						<div class="row">
+							<div class="col-md-4 col-sm-12">
+								<ul class="list_ok list-unstyled">
+									<li>Fan</li>
+									<li> Room service </li>
+									<li> ATM/cash machine on site </li>
+									<li> Currency exchange </li>
+									<li> 24-hour front desk </li>
+									<li> Taxi Service </li>
+								</ul>
+							</div>
+						</div>
+						<!-- End row  -->
+					</div>
+				</div> 	
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal for more details -->
+<div class="modal fade" id="bookingForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> <strong> Place Your Order </strong> </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+					<div class="col-md-12">
+						<div class="modal-list-wrapper">
+									<div class="row">
+										<div class="col-md-4 col-xs-12">
+											<div class="right-image">
+												<a href="#">
+													<img src="images/hotel_1.jpg" alt="room book detail" class="img-responsive">
+												</a>
+											</div>
+										</div>
+
+										<div class="col-md-6">
+											<div class="clearfix">
+												<div class="room-type">
+													<h3 class="h4"> Deluxe Room - Double </h3>
+													<span class="label label-success"> Available </span>
+												</div>
+
+												<div class="room-services">
+													<div class="room-description">
+														<ul class="list-unstyled">
+															<i class="fa fa-male"> </i>
+															<span> <b>Capacity : </b> </span>
+															<li>  <span class="capacity"> Adults x4 </span></li>
+															<li> <span class="capacity"> / Child x5 </span></li>
+														</ul>
+														<ul class="list-unstyled">
+															<i class="fa fa-calendar" aria-hidden="true"></i>
+															<span> <b>Availability : </b> </span>
+															<li> <span class="capacity"> Jan 20, 2018 </span></li>
+													
+														</ul>
+															<ul class="list-unstyled">
+															<i class="fa fa-map-marker" aria-hidden="true"></i>
+															<span> <b> Location : </b> </span>
+															<li> <span class="capacity"> Boudha, Kathandu </span></li>
+													
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+						</div> <!-- list wrapper -->
+						<div class="booking-form">
+							<div class="form-title">
+								<h3> Your Information </h3>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="firstname"> First Name  </label>
+											<input type="text" class="form-control" id="firstname" placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="lastname"> Last Name  </label>
+											<input type="text" class="form-control" id="lastname" placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="email"> Email </label>
+											<input type="text" class="form-control" id="email" placeholder="">
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="comail">  Confirm Email </label>
+											<input type="text" class="form-control" id="comail" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="telephone">  Telephone </label>
+											<input type="text" class="form-control" id="telephone" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-6 col-xs-12">
+										<div class="form-group">
+											<label for="country"> Country </label>
+											<input type="text" class="form-control" id="country" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="arrivaldate"> Arrival Date </label>
+											<input type="text" class="form-control" id="arrivaldate" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-4 col-xs-12">
+										<div class="form-group">
+											<label for="departuredate"> Departure Date</label>
+											<input type="text" class="form-control" id="departuredate" placeholder="">
+										</div>
+									</div>
+
+									<div class="col-sm-2 col-xs-6">
+										<label for="departuredate"> Adult </label>
+										<select class="form-control">
+										  <option>1</option>
+										  <option>2</option>
+										  <option>3</option>
+										  <option>4</option>
+										  <option>5</option>
+										</select>
+									</div>	
+
+									<div class="col-sm-2 col-xs-6">
+										<label for="departuredate"> Child </label>
+										<select class="form-control">
+										  <option>1</option>
+										  <option>2</option>
+										  <option>3</option>
+										  <option>4</option>
+										  <option>5</option>
+										</select>
+									</div>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-2 mt10">
+										<div class="search-btn">
+											<a href="#" class="btn btn-danger"> Book Now </a>
+										</div>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div> 	
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+		<!-- Bootstrap core JavaScript
+================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="sticky/jquery.sticky.js"> </script>
+		<script src="slider-pro-master/dist/js/jquery.sliderPro.min.js"></script>
+		<script type="text/javascript">
+			jQuery( document ).ready(function( $ ) {
+				$( '#my-slider' ).sliderPro({
+					width: 960,
+					height: 500,
+					arrows: true,
+					buttons: false,
+					waitForLayers: true,
+					fade: true,
+					autoplay: false,
+					autoScaleLayers: false
+				});
+
+				$(".sticker").sticky({topSpacing:0});
+				$(".sticker-form").sticky({topSpacing:95});
+			});
+		</script>
+
+	</body>
+</html>

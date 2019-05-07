@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Car Booking list </title>
+		<link href="bootstrap-3.3.7-dist/css/unminified-bootstrap.min.css" rel="stylesheet">
+		<link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,600,700i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i" rel="stylesheet">
+		<link href="bootstrap-slider/css-js/css/bootstrap-slider.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div clas="afixed-nav hidden-xs" id="menu">
+			<nav class="navbar navbar-default first-nav">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"> <img src="Images/logo-v2.png" class="img-responsive"> </a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav menu-list">
+							<li><a href="#">  Home </a></li>
+							<li><a href="#services-link"> <i class="fa fa-plane" aria-hidden="true"></i> Flights </a></li>
+							<li class="active"><a href="#features-link"> <i class="fa fa-bed" aria-hidden="true"></i> Hotels </a></li>
+							<li><a href="#features-link"> <i class="fa fa-car" aria-hidden="true"></i> Cars </a></li>
+							<li><a href="#features-link"> <i class="fa fa-bus" aria-hidden="true"></i> Tours </a></li>
+
+						</ul>
+						
+						<ul class="nav navbar-nav navbar-right login">
+							<!-- <li class="dropdown">
+								<a href="#" class="dropdown-toggle log-in-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Login <span class="caret"></span></a>
+								<ul class="dropdown-menu register-wrapper">
+									<div class="register-form">
+										<h3> Login to your account </h3>
+										
+										<div class="log-in-with">
+											<a href="#" class="btn btn-primary btn-block facebook-btn"> <i class="fa fa-facebook" aria-hidden="true"></i> Continue With Facebook </a>
+											<a href="#" class="btn btn-default btn-block google-btn"> <i class="fa fa-google" aria-hidden="true"></i> Continue With Google </a>
+										</div>
+										<div class="loginbox-v4__separator-container">
+											<div class="loginbox-v4__separator"></div>
+											<div class="loginbox-v4__separator-text">OR</div>
+											<div class="loginbox-v4__separator"></div>
+										</div>
+										<form>
+											<div class="form-group">
+												<label for="exampleInputEmail1">Email address</label>
+												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+											</div>
+											<div class="form-group">
+												<label for="Password">  Password</label>
+												<input type="password" class="form-control" id="Password" placeholder="">
+											</div>
+								
+											<div class="login-confirmed">
+												<a href="#" class="btn btn-default btn-danger btn-block"> Log In</a>
+												<p> or <a href="#"> Forgot Password</a></p>
+											</div>
+											
+											<div class="login-text">
+												By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+											</div>
+											
+											<div class="login-seperator"> </div>
+											<div class="login-footer">
+												Don't have an account?
+												<a class="sign-link" href="#">
+													Sign up
+												</a>
+											</div>
+										</form>
+									</div>
+									
+								</ul>
+							</li> -->
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle sign-up-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Log in <span class="caret"></span></a>
+								<ul class="dropdown-menu register-wrapper">
+									<div class="register-form">
+										<div class="row">
+											<div class="col-md-6">
+												<h3>Log in </h3>
+												<form>
+													<div class="form-group">
+														<!-- <label for="exampleInputEmail1">Email address</label> -->
+														<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+													</div>
+													<div class="form-group">
+														<!-- <label for="Password">  Password</label> -->
+														<input type="password" class="form-control" id="Password" placeholder="Password">
+													</div>
+										
+													<div class="login-confirmed">
+														<a href="#" class="btn btn-default btn-primary btn-block"> Log In</a>
+														<p> or <a href="#"> Forgot Password</a></p>
+													</div>
+													
+													<!-- <div class="login-text">
+														By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+													</div> -->
+													
+													<div class="loginbox-v4__separator-container">
+														<div class="loginbox-v4__separator"></div>
+														<div class="loginbox-v4__separator-text">OR</div>
+														<div class="loginbox-v4__separator"></div>
+													</div>
+
+													<!-- <div class="login-seperator"> </div> -->
+													<!-- <div class="login-footer">
+														Don't have an account?
+														<a class="sign-link" href="#">
+															Sign up
+														</a>
+													</div> -->
+												</form>
+												<div class="row">
+													<div class="col-sm-12">
+														<div class="log-in-with">
+															<a href="#" class="btn btn-primary facebook-btn"> <i class="fa fa-facebook" aria-hidden="true"></i> Facebook </a>
+															<a href="#" class="btn btn-default google-btn"> <i class="fa fa-google" aria-hidden="true"></i> Google </a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<h3> Sign up now </h3>
+												<form>
+													<div class="form-group">
+														
+														<input type="text" class="form-control" id="username" placeholder="Your Username">
+													</div>
+													<div class="form-group">
+														
+														<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+													</div>
+													<div class="form-group">
+														
+														<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+													</div>
+
+													<div class="form-group">
+													
+														<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
+													</div>
+
+
+													<div class="checkbox">
+														<label>
+															<input type="checkbox"> 
+															Check here for exciting deals and personalized course recommendations
+
+														</label>
+													</div>
+													
+													<div class="login-confirmed">
+														<a href="#" class="btn btn-default btn-primary btn-block"> Sign up</a>
+													</div>
+
+													<div class="login-text">
+														By signing up, you agree to our <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>
+													</div>
+												</form>
+											</div>
+											
+										</div>
+									</div>
+
+								</ul>
+							</li>
+
+						</ul>
+
+						
+						
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+
+		<div class="breadcrumbs2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+							<li class="breadcrumb-item active"> Hotel Booking</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="search-form">
+						<form>
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="fly_2"> Pick up Location </label>
+										<input type="text" class="form-control" id="fly_2" placeholder="Search Location">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-md-2 col-xs-6">
+									<div class="form-group">
+										<label for="fly_1"> Pick-up Date </label>
+										<input type="text" class="form-control datetimepicker" id="fly_1" placeholder="From">
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-md-2 col-xs-6">
+									<div class="form-group">
+										<label for="fly_2"> Drop-off Date </label>
+										<input type="text" class="form-control datetimepicker" id="fly_2" placeholder="TO">
+										<i class="fa fa-calendar" aria-hidden="true"></i>
+									</div>
+								</div>
+
+								<div class="col-sm-1 col-xs-6">
+										<div class="form-group">
+											<label for="departuredate"> Adult </label>
+											<select class="form-control">
+											  <option>1</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+											</select>
+											<i class="fa fa-chevron-down"></i>
+										</div>
+								</div>
+
+								<div class="col-sm-1 col-xs-6">
+										<div class="form-group">
+											<label for="departuredate"> Child </label>
+											<select class="form-control">
+												<option>0</option>
+											  <option>1</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+											</select>
+											<i class="fa fa-chevron-down"></i>
+										</div>
+								</div>
+
+								<div class="col-md-2">
+									<div class="search-btn">
+										<a href="#" class="btn btn-danger btn-find"> Find Cars </a>
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="booking-list">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="filter-wrapper">
+							<form>
+								<section class="search-filter filter p10">
+									<h4 class="heading-underline-left"> Star Grade </h4>
+										<div class="scroll-pane-y">
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="one-star">
+												<label for="one-star">
+													<span class="rating">
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+													</span>
+												</label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="two-star">
+												<label for="two-star">
+													<span class="rating">
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+													</span>
+												</label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="three-star">
+												<label for="three-star">
+													<span class="rating">
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+													</span>
+												</label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="four-star">
+												<label for="four-star">
+													<span class="rating">
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star-o"></i></a>
+													</span>
+												</label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="five-star">
+												<label for="five-star">
+													<span class="rating">
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+														<a href="#"><i class="fa fa-star"></i></a>
+													</span>
+												</label>
+											</div>
+										</div>
+								</section>
+
+								<section class="search-filter filter p10">
+									<h4 class="heading-underline-left"> Price Range </h4>
+									<input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
+									<div class="price-range clearfix">
+										<div class="min-price pull-left">
+											<span class="low-price"> From Rs.1000 </span>
+										</div>
+
+										<div class="max-price pull-right">
+											<span class="high-price"> To Rs. 5000(+)</span>
+										</div>
+									</div>
+								</section>
+
+								<section class="search-filter filter p10">
+									<h4 class="heading-underline-left"> Car Types </h4>
+										<div class="scroll-pane-y">
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="standard">
+												<label for="standard"> Standard </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="economy">
+												<label for="economy"> Economy </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="luxury">
+												<label for="luxury"> Luxury </label>
+											</div>
+										</div>
+
+								</section>
+
+								<section class="search-filter assured-essentials">
+									<h6 class="assured-title text-center"> ASSURED ESSENTIALS </h6>
+									<p class="assured-subtitle text-center"> Gauranteed at all our hotels </p>
+									<ul class="list-unstyled list-inline text-center">
+										<li>
+											<i class="fa fa-wifi" aria-hidden="true"></i>
+											wifi
+										</li>
+										<li>
+											<i class="fa fa-thermometer-full" aria-hidden="true"></i>
+											A/C Room
+										</li>
+										<li>
+											<i class="fa fa-coffee" aria-hidden="true"></i>
+											Breakfast
+										</li>
+
+										<li>
+											<i class="fa fa-television" aria-hidden="true"></i>
+											TV
+										</li>
+									</ul>
+								</section>
+
+								<section class="search-filter filter p10">
+									<h4 class="heading-underline-left"> Aminities </h4>
+										<div class="scroll-pane-y">
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="atransport">
+												<label for="atransport"> Airport Transport </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="BusinessCenter">
+												<label for="BusinessCenter"> Business Center </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="breakfast">
+												<label for="breakfast"> Breakfast </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="Lunch">
+												<label for="Lunch"> Lunch </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="Dinner">
+												<label for="Dinner"> Dinner </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="wifi">
+												<label for="wifi"> Wifi </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="nightclub">
+												<label for="nightclub"> Night Club </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="swimmingpool">
+												<label for="swimmingpool"> Swimming Pool </label>
+											</div>
+
+											<div class="checkbox custom-checkbox">
+												<input type="checkbox" id="Spa">
+												<label for="Spa">  SPA </label>
+											</div>
+									</div>
+								</section>
+
+							</form>
+						</div>
+					</div>
+					<div class="col-md-9">
+						
+						<div class="row top-filter">
+							<div class="col-md-12">
+								<div class="result-text pull-left">
+									Showing 50 Best Rental Cars in Kathmandu
+								</div>
+								<div class="filter-wrapper pull-right">
+									<div class="btn-group">
+										<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fa fa-filter" aria-hidden="true"></i> Sort By<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Price: Low to High </a></li>
+											<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Price: Hight to Low </a></li>
+											<li><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i> Discount </a></li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-4">
+								<div class="list-wrapper box-shadow clearfix p10">
+									<div class="right-image">
+										<img src="images/car1.png" alt="car for rent" class="img-responsive">
+									</div>
+
+									<div class="car-description">
+										<ul class="list-unstyled display--inline-block">
+											<span> <b>Capacity : </b> </span>
+											<li> <i class="fa fa-male"> </i> <span class="capacity">  x4 </span></li>
+											<li> <i class="fa fa-shopping-bag" aria-hidden="true"> </i> <span class="capacity"> x5 </span></li>
+										</ul>
+										<span class="label label-success"> Available </span>
+									</div>
+
+									<div class="car-model">
+										<h4 class="mt2 mb2"> Ford Escape </h4>
+										<p>
+											<span class="rating">
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+											</span>
+										</p>
+									</div>	
+
+									<div class="car-specification">
+										<ul class="list-unstyled">
+											<li> <span> Engine:4 Cylinder </span></li>
+											<li> <span> transmission:Automatic </span></li>
+											<li> <span> Drive Type:Front Wheel Drive </span></li>
+											<li> <span> Ext Color:Snow White Pearl (White) </span></li>
+										</ul>
+									</div>
+
+									<div class="booking-footer p7">
+										<div class="book-btn pull-right">
+
+											<a href="#" class="btn btn-sm btn-primary"> <i class="fa fa-calendar" aria-hidden="true"></i> view more </a>
+										</div>
+										<div class="pricing-details pull-left">
+											<span class="actual-price"> Rs. 2000 </span>
+										</div>
+
+
+									</div>
+
+								</div> <!-- list wrapper -->
+							</div>
+							
+							<div class="col-md-4">
+								<div class="list-wrapper box-shadow clearfix p10">
+									<div class="right-image">
+										<img src="images/car2.png" alt="car for rent" class="img-responsive">
+									</div>
+
+									<div class="car-description">
+										<ul class="list-unstyled display--inline-block">
+											<span> <b>Capacity : </b> </span>
+											<li> <i class="fa fa-male"> </i> <span class="capacity">  x4 </span></li>
+											<li> <i class="fa fa-shopping-bag" aria-hidden="true"> </i> <span class="capacity"> x5 </span></li>
+										</ul>
+										<span class="label label-success"> Available </span>
+									</div>
+
+									<div class="car-model">
+										<h4 class="mt2 mb2"> Ford Escape </h4>
+										<p>
+											<span class="rating">
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+											</span>
+										</p>
+									</div>	
+
+									<div class="car-specification">
+										<ul class="list-unstyled">
+											<li> <span> Engine:4 Cylinder </span></li>
+											<li> <span> transmission:Automatic </span></li>
+											<li> <span> Drive Type:Front Wheel Drive </span></li>
+											<li> <span> Ext Color:Snow White Pearl (White) </span></li>
+										</ul>
+									</div>
+
+									<div class="booking-footer p7">
+										<div class="book-btn pull-right">
+
+											<a href="#" class="btn btn-sm btn-primary"> <i class="fa fa-calendar" aria-hidden="true"></i> view more  </a>
+										</div>
+										<div class="pricing-details pull-left">
+											<span class="actual-price"> Rs. 2000 </span>
+										</div>
+
+
+									</div>
+
+								</div> <!-- list wrapper -->
+							</div>
+							
+							<div class="col-md-4">
+								<div class="list-wrapper box-shadow clearfix p10">
+									<div class="right-image">
+										<img src="images/car3.png" alt="car for rent" class="img-responsive">
+									</div>
+
+									<div class="car-description">
+										<ul class="list-unstyled display--inline-block">
+											<span> <b>Capacity : </b> </span>
+											<li> <i class="fa fa-male"> </i> <span class="capacity">  x4 </span></li>
+											<li> <i class="fa fa-shopping-bag" aria-hidden="true"> </i> <span class="capacity"> x5 </span></li>
+										</ul>
+										<span class="label label-success"> Available </span>
+									</div>
+
+									<div class="car-model">
+										<h4 class="mt2 mb2"> Ford Escape </h4>
+										<p>
+											<span class="rating">
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+											</span>
+										</p>
+									</div>	
+
+									<div class="car-specification">
+										<ul class="list-unstyled">
+											<li> <span> Engine:4 Cylinder </span></li>
+											<li> <span> transmission:Automatic </span></li>
+											<li> <span> Drive Type:Front Wheel Drive </span></li>
+											<li> <span> Ext Color:Snow White Pearl (White) </span></li>
+										</ul>
+									</div>
+
+									<div class="booking-footer p7">
+										<div class="book-btn pull-right">
+
+											<a href="#" class="btn btn-sm btn-primary"> <i class="fa fa-calendar" aria-hidden="true"></i> view more </a>
+										</div>
+										<div class="pricing-details pull-left">
+											<span class="actual-price"> Rs. 2000 </span>
+										</div>
+
+
+									</div>
+
+								</div> <!-- list wrapper -->
+							</div>
+							
+							<div class="col-md-4">
+								<div class="list-wrapper box-shadow clearfix p10">
+									<div class="right-image">
+										<img src="images/car2.png" alt="car for rent" class="img-responsive">
+									</div>
+
+									<div class="car-description">
+										<ul class="list-unstyled display--inline-block">
+											<span> <b>Capacity : </b> </span>
+											<li> <i class="fa fa-male"> </i> <span class="capacity">  x4 </span></li>
+											<li> <i class="fa fa-shopping-bag" aria-hidden="true"> </i> <span class="capacity"> x5 </span></li>
+										</ul>
+										<span class="label label-success"> Available </span>
+									</div>
+
+									<div class="car-model">
+										<h4 class="mt2 mb2"> Ford Escape </h4>
+										<p>
+											<span class="rating">
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+											</span>
+										</p>
+									</div>	
+
+									<div class="car-specification">
+										<ul class="list-unstyled">
+											<li> <span> Engine:4 Cylinder </span></li>
+											<li> <span> transmission:Automatic </span></li>
+											<li> <span> Drive Type:Front Wheel Drive </span></li>
+											<li> <span> Ext Color:Snow White Pearl (White) </span></li>
+										</ul>
+									</div>
+
+									<div class="booking-footer p7">
+										<div class="book-btn pull-right">
+
+											<a href="#" class="btn btn-sm btn-primary"> <i class="fa fa-calendar" aria-hidden="true"></i> view more </a>
+										</div>
+										<div class="pricing-details pull-left">
+											<span class="actual-price"> Rs. 2000 </span>
+										</div>
+
+
+									</div>
+
+								</div> <!-- list wrapper -->
+							</div>
+							
+							<div class="col-md-4">
+								<div class="list-wrapper box-shadow clearfix p10">
+									<div class="right-image">
+										<img src="images/car3.png" alt="car for rent" class="img-responsive">
+									</div>
+
+									<div class="car-description">
+										<ul class="list-unstyled display--inline-block">
+											<span> <b>Capacity : </b> </span>
+											<li> <i class="fa fa-male"> </i> <span class="capacity">  x4 </span></li>
+											<li> <i class="fa fa-shopping-bag" aria-hidden="true"> </i> <span class="capacity"> x5 </span></li>
+										</ul>
+										<span class="label label-success"> Available </span>
+									</div>
+
+									<div class="car-model">
+										<h4 class="mt2 mb2"> Ford Escape </h4>
+										<p>
+											<span class="rating">
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+											</span>
+										</p>
+									</div>	
+
+									<div class="car-specification">
+										<ul class="list-unstyled">
+											<li> <span> Engine:4 Cylinder </span></li>
+											<li> <span> transmission:Automatic </span></li>
+											<li> <span> Drive Type:Front Wheel Drive </span></li>
+											<li> <span> Ext Color:Snow White Pearl (White) </span></li>
+										</ul>
+									</div>
+
+									<div class="booking-footer p7">
+										<div class="book-btn pull-right">
+
+											<a href="#" class="btn btn-sm btn-primary"> <i class="fa fa-calendar" aria-hidden="true"></i> view more </a>
+										</div>
+										<div class="pricing-details pull-left">
+											<span class="actual-price"> Rs. 2000 </span>
+										</div>
+
+
+									</div>
+
+								</div> <!-- list wrapper -->
+							</div>
+							
+							<div class="col-md-4">
+								<div class="list-wrapper box-shadow clearfix p10">
+									<div class="right-image">
+										<img src="images/car1.png" alt="car for rent" class="img-responsive">
+									</div>
+
+									<div class="car-description">
+										<ul class="list-unstyled display--inline-block">
+											<span> <b>Capacity : </b> </span>
+											<li> <i class="fa fa-male"> </i> <span class="capacity">  x4 </span></li>
+											<li> <i class="fa fa-shopping-bag" aria-hidden="true"> </i> <span class="capacity"> x5 </span></li>
+										</ul>
+										<span class="label label-success"> Available </span>
+									</div>
+
+									<div class="car-model">
+										<h4 class="mt2 mb2"> Ford Escape </h4>
+										<p>
+											<span class="rating">
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+												<a href="#"><i class="fa fa-star"></i></a>
+											</span>
+										</p>
+									</div>	
+
+									<div class="car-specification">
+										<ul class="list-unstyled">
+											<li> <span> Engine:4 Cylinder </span></li>
+											<li> <span> transmission:Automatic </span></li>
+											<li> <span> Drive Type:Front Wheel Drive </span></li>
+											<li> <span> Ext Color:Snow White Pearl (White) </span></li>
+										</ul>
+									</div>
+
+									<div class="booking-footer p7">
+										<div class="book-btn pull-right">
+
+											<a href="#" class="btn btn-sm btn-primary"> <i class="fa fa-calendar" aria-hidden="true"></i> view more  </a>
+										</div>
+										<div class="pricing-details pull-left">
+											<span class="actual-price"> Rs. 2000 </span>
+										</div>
+
+
+									</div>
+
+								</div> <!-- list wrapper -->
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<div class="pagination1">
+									<nav aria-label="Page navigation">
+										<ul class="pagination">
+											<li>
+												<a href="#" aria-label="Previous" class="previous">
+													<span aria-hidden="true"> Previous </span>
+												</a>
+											</li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li>
+												<a href="#" aria-label="Next"  class="next">
+													<span aria-hidden="true"> Next </span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h4> jatayo.com </h4>
+						<p> Lorem ipsum dolor sit amet consadi Nam at tempus nunc. Integer bib psum dolor sit amet consadipis Nam at tempus nunc.</p>
+						<ul class="list-unstyled">
+							<li> <a href="#"> Contact </a></li>
+							<li> <a href="#"> Faq </a></li>
+							<li> <a href="#"> About </a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4> Tours </h4>
+						<ul class="list-unstyled">
+							<li> <a href="#"> Hotels </a></li>
+							<li> <a href="#"> Cars </a></li>
+							<li> <a href="#"> Flights </a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4> Follow Us </h4>
+						<ul class="list-unstyled list-inline">
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-facebook-f"> </i></span> </a></li>
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-twitter"> </i></span> </a></li>
+							<li> <a href="#"> <span class="social-icon"> <i class="fa fa-google-plus-official"> </i></span> </a></li>
+
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- Bootstrap core JavaScript
+================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bootstrap-slider/css-js/bootstrap-slider.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+			$("#ex2").slider({});
+
+			});
+		</script>
+	</body>
+</html>
